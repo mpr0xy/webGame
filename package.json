@@ -1,0 +1,19 @@
+{
+  "name": "wolfapp",
+  "version": "1.0.0",
+  "description": "狼人杀 你画我猜 webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue.js",
+    "html",
+    "css"
+  ],
+  "author": "jianghan",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}

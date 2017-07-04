@@ -1,0 +1,58 @@
+{
+  "data":[
+    {
+      "id":"01",
+      "username":"超人爱上蝙蝠侠",
+      "userpic":"../img/user01.jpeg",
+      "level":"3",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    },
+    {
+      "id":"02",
+      "username":"nobody",
+      "userpic":"../img/WechatIMG7.jpeg",
+      "level":"1",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    },
+    {
+      "id":"03",
+      "username":"nobody",
+      "userpic":"../img/WechatIMG3.jpeg",
+      "level":"1",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    },
+    {
+      "id":"04",
+      "username":"nobody",
+      "userpic":"../img/WechatIMG4.jpeg",
+      "level":"1",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    },
+    {
+      "id":"05",
+      "username":"nobody",
+      "userpic":"../img/WechatIMG5.jpeg",
+      "level":"1",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    }
+    ,{
+      "id":"06",
+      "username":"nobody",
+      "userpic":"../img/WechatIMG6.jpeg",
+      "level":"1",
+      "score":0,
+      "currentUser": false,
+      "seccess":false
+    }
+  ]
+}

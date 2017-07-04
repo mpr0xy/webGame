@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-cn" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" target-densitydpi=device-dpi>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../app/reset.css">
+  <link rel="stylesheet" href="../app/main.css">
+  <title>你画我猜</title>
+</head>
+<body>
+
+  <div id="main">
+    <div class="out" v-show="show">
+    </div>
+    <div class="head">
+    </div>
+    <div class="userinfo">
+      <img class="pic" :src="painter.userpic">
+      <div class="txt">{{painter.username}}<span class="level">LV{{painter.level}}</span>
+      </div>
+    </div>
+    <div id="content">
+      <div id ="canvasDiv">
+      </div>
+      <div class="tips" v-if="close">
+        {{ttitle}}:{{tcontent}}
+        <span class="time">{{time}}</span>
+      </div>
+      <div class="position mask" v-if="!theUser.currentUser">
+      </div>
+      <div class="position choose" v-if="!close">
+          <div class="childbox">
+            <h2>请选择你想画的词</h2>
+            <p>{{ctime}}秒后系统帮你自动选择</p>
+            <button v-for="word in chooseword" class="btnword" type="button" v-on:click="chooseWord">{{word.word}}</button>
+          </div>
+      </div>
+      <div class="inputbox"  v-show="show">
+        <button class="btn-close" type="button" v-on:click="clickClose"></button>
+        <input type="text" v-model="answer" placeholder="请输入你的答案">
+        <button class="btns" type="button" v-on:click="clickEnter">确定</button>
+      </div>
+    </div>
+    <div id="userlist">
+      <ul class="users">
+        <li v-for="item in userInfo">
+          <img class="pic" :src="item.userpic">
+          <span class="score">{{item.score}}</span>
+          <div class="mask" v-if="item.currentUser">画图中</div>
+        </li>
+      </ul>
+    </div>
+    <div id="userinput">
+      <div class="occlusion" v-if="theUser.seccess">
+      </div>
+      <button class="btn" type="button" v-on:click="clickInput">{{btntxt}}
+      </button>
+    </div>
+  </div>
+
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../app/js/canvas.js "></script>
+   <script src="../app/js/render.js"></script>
+</body>
+</html>

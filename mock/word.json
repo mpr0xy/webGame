@@ -1,0 +1,44 @@
+{
+  "data":[
+    {
+      "prompt": "水果",
+      "word": "香蕉",
+      "numword":"二"
+    },
+    {
+      "prompt":"生活用品",
+      "word":"手表",
+      "numword":"二"
+    },
+    {
+      "prompt":"动物",
+      "word":"老虎",
+      "numword":"二"
+    },
+    {
+      "prompt":"一种仪式",
+      "word":"升旗",
+      "numword":"二"
+    },
+    {
+      "prompt":"生活用品",
+      "word":"纸杯",
+      "numword":"二"
+    },
+    {
+      "prompt":"动物",
+      "word":"长颈鹿",
+      "numword":"三"
+    },
+    {
+      "prompt":"运动",
+      "word":"跑步",
+      "numword":"二"
+    },
+    {
+      "prompt":"运动",
+      "word":"摔跤",
+      "numword":"二"
+    }
+  ]
+}
